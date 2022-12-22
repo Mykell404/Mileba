@@ -1,20 +1,18 @@
-import ImageBox from "../components/Image/ImageBox";
+import { useState } from "react";
+
 import Navbar from "../components/Navbar/Navbar";
-import BigText from "../components/Text/BigText";
-import Hello from "../components/Text/Hello";
+import Route from "../components/Route/Route";
+import Intro from "../components/Section/Intro";
 
 export default function Home() {
+  const [home, setHome] = useState(true);
+
   return (
-    <div className="lg:px-20">
+    <div className="container mx-auto relative ">
       <Navbar />
-      <div className="m-6 mr-20 md:mr-0 md:flex md:flex-col-reverse">
-        <div className="  md:flex md:justify-between ">
-          <ImageBox image="./avatar1.png" />
-          <Hello />
-        </div>
-        <div>
-          <BigText />
-        </div>
+      <div className="md:flex md:flex-row-reverse justify-around">
+        <Intro />
+        <Route />
       </div>
     </div>
   );

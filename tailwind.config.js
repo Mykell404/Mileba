@@ -42,6 +42,9 @@ module.exports = {
         800: "#1E293B",
         900: "#0F172A",
       },
+      "brand-white": {
+        50: "#fff",
+      },
     },
     fontFamily: {
       cabinet: ["Cabinet", "cursive"],
