@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { useState } from "react";
 
 import Navbar from "../components/Navbar/Navbar";
@@ -22,23 +23,28 @@ export default function Home() {
   // }
 
   return (
-    <div className="container mx-auto relative">
-      <Navbar />
-      <div className="md:flex md:flex-row-reverse justify-around">
-        {/* {renderRoute} */}
-        <Main
-          homeRoute={homeRoute}
-          aboutRoute={aboutRoute}
-          projectRoute={projectRoute}
-          blogRoute={blogRoute}
-        />
+    <div>
+      <Head>
+        <title>Mileba Micheal</title>
+      </Head>
+      <div className="container mx-auto relative">
+        <Navbar />
+        <div className="md:flex md:flex-row-reverse justify-around">
+          {/* {renderRoute} */}
+          <Main
+            homeRoute={homeRoute}
+            aboutRoute={aboutRoute}
+            projectRoute={projectRoute}
+            blogRoute={blogRoute}
+          />
 
-        <Route
-          setHomeRoute={setHomeRoute}
-          setAboutRoute={setAboutRoute}
-          setProjectRoute={setProjectRoute}
-          setBlogRoute={setBlogRoute}
-        />
+          <Route
+            setHomeRoute={setHomeRoute}
+            setAboutRoute={setAboutRoute}
+            setProjectRoute={setProjectRoute}
+            setBlogRoute={setBlogRoute}
+          />
+        </div>
       </div>
     </div>
   );
