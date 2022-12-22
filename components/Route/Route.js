@@ -39,7 +39,7 @@ export default function Route({
       <img src="/Projects.svg" onClick={setProject} />
       <img src="/Blog.svg" onClick={setBlog} />
       <div className="border-brand-gray-900 border "></div>
-      <img src="/About.svg" />
+      <img src="/DarkMode.svg" />
     </div>
   );
 }
