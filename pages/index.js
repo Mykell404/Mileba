@@ -43,6 +43,10 @@ export default function Home() {
             setAboutRoute={setAboutRoute}
             setProjectRoute={setProjectRoute}
             setBlogRoute={setBlogRoute}
+            aboutRoute={aboutRoute}
+            homeRoute={homeRoute}
+            blogRoute={blogRoute}
+            projectRoute={projectRoute}
           />
         </div>
       </div>

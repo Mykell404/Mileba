@@ -4,7 +4,7 @@ import Languages from "./Language";
 export default function AboutText() {
   return (
     <div className="md:w-fit md:mx-8">
-      <h1 className="text-2xl font-cabinet-bold md:text-5xl my-6">
+      <h1 className="text-2xl font-cabinet-bold md:text-5xl my-6 text-brand-gray-700">
         Meet Micheal 👋
       </h1>
       <p className="font-cabinet md:text-xl text-brand-gray-700">
