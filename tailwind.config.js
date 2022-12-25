@@ -50,6 +50,9 @@ module.exports = {
       cabinet: ["Cabinet", "cursive"],
       "cabinet-bold": ["Cabinet-bold", "cursive"],
     },
+    listStyleType: {
+      square: "square",
+    },
 
     extend: {},
   },

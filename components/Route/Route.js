@@ -34,7 +34,7 @@ export default function Route({
 
   return (
     <div className="border bg-brand-gray-50 border-brand-green-500 flex md:flex-col justify-between p-4 m-4 rounded-lg sticky bottom-0 md:h-[500px]  md:top-[250px] md:left-[100px] ">
-      <img src="/Home.svg" onClick={setHome} />
+      <img src="/Home.svg" onClick={setHome} width="40px" />
       <img src="/About.svg" onClick={setAbout} />
       <img src="/Projects.svg" onClick={setProject} />
       <img src="/Blog.svg" onClick={setBlog} />
