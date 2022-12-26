@@ -4,7 +4,7 @@ import BigText from "../Text/BigText";
 
 export default function Intro() {
   return (
-    <div className="m-6 mr-20 md:mr-0 md:flex md:flex-col-reverse">
+    <div className="m-6 mr-20 md:mr-0 md:flex md:flex-col-reverse md:w-full">
       <div className="  md:flex md:justify-between ">
         <ImageBox image="./avatar1.png" />
         <Hello />

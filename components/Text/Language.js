@@ -1,6 +1,6 @@
 export default function Languages() {
   const languageList = [
-    "TypeScript/Javscript",
+    "TypeScript/Javascript",
     "React",
     "Solidity",
     "Web3.js",
