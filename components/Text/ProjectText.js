@@ -3,7 +3,7 @@ export default function ProjectText({ name, info, languageUsed, link }) {
     <div className="py-4 border-b-2 border-brand-gray-500 ">
       <h1 className="font-cabinet-bold text-2xl text-brand-gray-700">{name}</h1>
       <p className="font-cabinet text-brand-gray-500">{info}</p>
-      <ul className="flex justify-between list-square m-4 font-cabinet text-xl text-brand-gray-700">
+      <ul className="flex justify-between list-square m-4 font-cabinet text-xl text-brand-gray-700 flex-wrap gap-1">
         {languageUsed.map((language, i) => (
           <li key={i}>{language}</li>
         ))}
