@@ -41,9 +41,13 @@ module.exports = {
         700: "#334155",
         800: "#1E293B",
         900: "#0F172A",
+        950: "#67686B",
       },
       "brand-white": {
         50: "#fff",
+      },
+      black: {
+        900: "#26272C",
       },
     },
     fontFamily: {
@@ -57,4 +61,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  darkMode: "class",
 };

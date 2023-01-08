@@ -14,7 +14,10 @@ export default function Languages() {
       </h1>
       <ul className="list-square md:flex justify-between">
         {languageList.map((language, i) => (
-          <li key={i} className="ml-4 mb-2 text-brand-gray-700">
+          <li
+            key={i}
+            className="ml-4 mb-2 text-brand-gray-700 dark:text-brand-white-50"
+          >
             {language}
           </li>
         ))}

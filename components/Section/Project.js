@@ -20,7 +20,7 @@ export default function Project() {
     {
       id: 3,
       name: "Simple Shell",
-      info: "Simple Shell is a sh-compatible command language interpreter that executes commands read from the standard input or from a file",
+      info: "A sh-compatible command language interpreter that execute commands read from the standard input or from a file",
       languageUsed: ["C"],
       linkToGithub: "https://github.com/Mykell404/simple_shell",
     },
@@ -36,7 +36,7 @@ export default function Project() {
   return (
     <div className="m-4 md:w-full">
       <ProjectIntro />
-      <div className="mt-8 md:flex justify-between flex-wrap">
+      <div className="mt-8 md:flex justify-between flex-wrap ">
         {projectList.map((project) => (
           <ProjectText
             key={project.id}

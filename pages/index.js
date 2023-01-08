@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { useState } from "react";
+import { useTheme } from "next-themes";
 
 import Navbar from "../components/Navbar/Navbar";
 import Route from "../components/Route/Route";
@@ -10,13 +11,14 @@ export default function Home() {
   const [aboutRoute, setAboutRoute] = useState(false);
   const [projectRoute, setProjectRoute] = useState(false);
   const [blogRoute, setBlogRoute] = useState(false);
+  const { theme, setTheme } = useTheme("light");
 
   return (
-    <div>
+    <div className="dark:bg-black-900">
       <Head>
         <title>Mileba Micheal</title>
       </Head>
-      <div className="container mx-auto relative">
+      <div className="container mx-auto relative ">
         <Navbar />
         <div className="md:flex md:flex-row-reverse justify-around">
           {/* {renderRoute} */}
@@ -36,6 +38,8 @@ export default function Home() {
             homeRoute={homeRoute}
             blogRoute={blogRoute}
             projectRoute={projectRoute}
+            theme={theme}
+            setTheme={setTheme}
           />
         </div>
       </div>
