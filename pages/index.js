@@ -14,7 +14,7 @@ export default function Home() {
   const { theme, setTheme } = useTheme("light");
 
   return (
-    <div className="dark:bg-black-900">
+    <div>
       <Head>
         <title>Mileba Micheal</title>
       </Head>
